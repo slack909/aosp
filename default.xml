@@ -8,13 +8,17 @@
            remote="aosp"
            sync-j="4" />
            
-                  <remote  name="cm"
+  <remote  name="cm"
            fetch="https://github.com"
            revision="refs/heads/cm-13.0" />
-
+	
+  <remote  name="github"
+           fetch="https://github.com/AOSP-CAF"
+           revision="refs/heads/mm6.0" />
+           
   <remote  name="zf2"
            fetch="https://github.com/AOSP-Zenfone2"
-           revision="refs/heads/mm6.0" />
+           revision="refs/heads/mm6.0" />mm6.0" />
  
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
